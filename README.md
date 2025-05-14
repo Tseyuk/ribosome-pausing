@@ -1,3 +1,5 @@
+When conduct all the steps in ribosome_profiling_pipeline\#Ribo-seq_process.sh and get the bedgraph file 
+
 at terminal, use
 
 python v3_finnal_ave_0frame_normed_dicodon_pausing.py -i .\test_A.bedgraph -r .\ .\test_longest_cDNA.txt
