@@ -1,6 +1,6 @@
 # Ribo-seq-workflow
  **<font color="grey"><font size=10> ANALYSIS of Ribo-Seq </font></font>**
-<font size=5><font color="grey"><p align="right">2020.10.27</p></font></font>
+<font size=5><font color="grey"><p align="right">2025.07.07</p></font></font>
 # <font color="steelblue">STEP 1  Reference Building</font>
 
 
