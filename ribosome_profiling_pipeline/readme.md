@@ -41,7 +41,6 @@ cut -f1,2 genome.fa.fai > sizes.genome
 ```shell
 hisat2-bulid -p 16 ribosomes.fa rDNA
 ```
-[Ribo_seq_step1.sh](https://github.com/Lu-1023/Ribo-seq-workflow/blob/main/Ribo_seq_step1.sh)
 ***
 # <font color="steelblue">STEP 2 Data Processing </font>
 ## <font size =4>1 trim adapter </font>
@@ -128,14 +127,3 @@ Calculate and plot the RPKM and the coverage.
 perl ../ribo_code/step7_cov_statv2.pl -sp ${species} -d ./ -sort ${sort}
 Rscript ../ribo_code/step8_seq_status.R ${species} ${sort}
 ```
-## <font size =4>10 reads count statistic</font>
-Calculate the codon accumulate reads the median reads count for each genes.
-```shell
-perl ../ribo_code/step10_count_reads_by_codon_m.pl -sp ${species}
-```
-## <font size =4>11 the reads counts statistics of start codon and stop codon</font>
-Calculate the accumulation reads at the start codon and stop codon.
-```shell
-perl ../ribo_code/step12_re_start_stop_count.pl -sp ${species} -s ${line}
-```
-[Ribo_seq_step2.sh](https://github.com/Lu-1023/Ribo-seq-workflow/blob/main/Ribo_seq_step2.sh)
