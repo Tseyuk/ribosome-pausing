@@ -2,8 +2,6 @@
 # -*- coding: utf-8 -*-
 
 """
-step1_trim3.py  –  Python 3 rewrite of step1_trim3.pl (2020‑09‑14).
-
 * Reads a `filelist.txt` (one sample id per line, no extension).
 * For every `<sample>.fq.gz`:
     – Trim the first occurrence of the adapter (or its 1‑5 nt‑shorter head)
