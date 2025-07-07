@@ -37,19 +37,7 @@ python longest_cDNA.py  ${name}
 samtools faidx genome.fa
 cut -f1,2 genome.fa.fai > sizes.genome
 ```
-## <font size=4>5 calculate CBI  </font>
-```shell
-Rscript cDNA/CBI.R ${name}				
-perl cDNA/UTR_length.pl -g ${name}
-perl cDNA/cal_CBI_CAIavg.pl -sp ${name}	
-```
-## <font size =4>6 creat index for genome </font>
-```shell
-python ~/Genomes/extract_exons.py genes.gtf >genome.exon
-python ~/Genomes/extract_splice_sites.py genes.gtf >genome.ss
-hisat2-bulid -p 16 genome.fa --ss ~/Genomes/${name}/Genes/genome.ss --exon ~/Genomes/${name}/Genes/genome.exon genome
-```
-## <font size =4>7 creat index for rRNA </font>
+## <font size =4>5 creat index for rRNA </font>
 ```shell
 hisat2-bulid -p 16 ribosomes.fa rDNA
 ```
