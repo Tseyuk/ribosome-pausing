@@ -71,7 +71,7 @@ rm ${line}.sam ${line}.bam
 ## <font size =4>3  periodicity statistic</font>
 The step will statistic the periodicity based the length of reads. You can get  the distribution for the 3 kinds of frames in different reads length.
 ```shell
-perl ../ribo_code/step3_codon_pos_length.pl
+python ../ribo_code/step3_codon_pos_length.py
 ```
 ## <font size =4>3 mapping to genome-wide reference</font>
 And then we use the data to map to the genome-wide refrence.
