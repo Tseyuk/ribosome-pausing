@@ -26,11 +26,11 @@ awk 'NF{NF-=4}1' FS="\t" OFS="\t" ref1.txt > refFlat.txt
 ## <font size=4>3 build reference</font>
 creat the CDS.fa like this <kbd>100nt 5'-UTR</kbd> + <kbd>CDS</kbd> + <kbd>100nt 3'-UTR</kbd>
 ```shell
-perl cDNA/sequence_by_refFlat.pl  -g ${name}
+python sequence_by_refflat.py -g ${name}
 ```
 creat the longest_cDNA.fa containing the longest isoforms in this file and make the bowtie/hisat2 index for the longest_cDNA 
 ```shell
-Rscript cDNA/longest_cDNA_index.R ${name}
+python longest_cDNA.py  ${name}
 ```
 ## <font size=4>4 calculate the size of genome </font>
 ```shell
