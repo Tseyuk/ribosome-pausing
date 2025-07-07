@@ -47,7 +47,7 @@ hisat2-bulid -p 16 ribosomes.fa rDNA
 ## <font size =4>1 trim adapter </font>
 You can choose the trim tools you like or use the scrip we provided.
 ```shell
-perl ribo_code/step1_trim3.pl -ad ${ad}
+python step1_trim3.py  -ad ${ad}
 #
     ${ad} provide you adapter sequence
 ```
