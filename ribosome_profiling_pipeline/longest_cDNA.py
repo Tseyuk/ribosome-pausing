@@ -6,7 +6,6 @@ Pick, for every gene, the transcript with the longest CDS (≥ 100 nt on each
 CDS length ≡ 0 mod 3).  Write those sequences to longest_cDNA.fa, create Bowtie
 and HISAT2 indices, and dump a .chrom length file.
 
-Direct port of the original R script by wzy – 2025‑07‑07.
 """
 
 from __future__ import annotations
