@@ -115,7 +115,7 @@ def longest_gene(species: str,
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Python rewrite of longest_cDNA.R"
+        description="creat the longest_cDNA.fa containing the longest isoforms in this file and make the bowtie/hisat2 index for the longest_cDNA"
     )
     parser.add_argument(
         "species", nargs="+",
