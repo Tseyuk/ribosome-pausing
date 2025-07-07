@@ -72,7 +72,7 @@ def sliding(i):
                     if 0 < relapos <= 96  and normvalue!= None:  # only the signal from the 0 frame of each codon could be recorded
                         lspos = relapos-1 # 0 +1 -1 frame all TAKING INTO ACCOUNT
                         # lspos = int(relapos / 3)
-                        normed_val= reads / normvalue #normalize with average is better
+                        normed_val= round(reads / normvalue ,3)#normalize with average is better
                         #normed_val= reads * normvalue
                         kongls[lspos] = str(normed_val)
                     else:
@@ -114,18 +114,18 @@ for sig in fbed:
     pos = sig[1].strip()
     posend = sig[2].strip()
     kongtotal = list(ori)
-    kposls= [name,posend,read]#the signal is in the first nt of a codon
+    kposls= [name,pos,read]#the signal is in the first nt of a codon
     if kposls[-1] == 0:
         continue
     else:
         if int(posend) - int(pos) == 1:
             bedposls.append(kposls)
-            newls = [posend,read]
+            newls = [pos,read]
             kongtotal.append(newls)
         else:
             count = int(posend) - int(pos)
             for copo in range(count):
-                kposls[1] = int(kposls[1]) + int(copo)
+                kposls[1] = int(pos) + int(copo)
                 add = str(kposls[1])
                 lsn = [name, add, read]
                 bedposls.append(lsn)
