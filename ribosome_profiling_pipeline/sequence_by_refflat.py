@@ -4,8 +4,6 @@
 """
 Extract CDS‑flanking sequences from a UCSC refFlat annotation, translate them,
 count codon usage, and write several helper files.
-
-Direct port of the original Perl script by wz‑y (2025‑07‑07).
 """
 
 import argparse
@@ -199,7 +197,7 @@ def genome_to_rna(species: str, root: Path) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Extract sequences from a UCSC refFlat file (Python rewrite)."
+        description="Extract sequences from a UCSC refFlat file."
     )
     parser.add_argument(
         "-g", "--genome", required=True,
