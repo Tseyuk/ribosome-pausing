@@ -46,7 +46,7 @@ hisat2-bulid -p 16 ribosomes.fa rDNA
 ## <font size =4>1 trim adapter </font>
 You can choose the trim tools you like or use the scrip we provided.
 ```shell
-python step1_trim3.py  -ad ${ad}
+python ../ribo_code/step1_trim3.py  -ad ${ad}
 #
     ${ad} provide you adapter sequence
 ```
@@ -89,7 +89,7 @@ stringtie -e -B -p 16 -G ${Genome}/${species}/Genes/genes.gtf -o $line/$line.FPK
 ## <font size =4>4 convert genome.bam to genome.bed</font>
 Convert the .bam files mapped to the genome-wide reference to .bed based on the periodicty statistics.
 ```shell
-python ribo_code/step16_bamtobed.py --doc ${doc} --periodicity 70
+python ../ribo_code/step16_bamtobed.py --doc ${doc} --periodicity 70
 # 
     --periodicity we choose the reads whoes the proportion of any frame is more than 70%
 ```
