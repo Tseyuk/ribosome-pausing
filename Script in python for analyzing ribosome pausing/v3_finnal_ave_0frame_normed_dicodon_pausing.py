@@ -50,7 +50,6 @@ def sliding(i):
     if len(del_10codon_cds) < window:
         print('not avalable')
     elif len(del_10codon_cds) > window:
-        print('================processing'+name+'==================')
         slidecounts = int(round((len(del_10codon_cds) - 96)/3))
         for count in range(slidecounts):
             start = count*3
