@@ -2,6 +2,8 @@
 This script is designed to quickly generate a file recording all the signals near to the central 3 codons flanked by 10 codons by using sliding window. It can also be running at  underpowered or RAM-limited machine. 
 
 ## Ribosome-pausing/
+
+```shell
 ├── Script in python for analyzing ribosome pausing/
 │   ├── test_A.bedgraph           # bedgraph  demo file for testing
 │   ├── test_longest_cDNA.txt     # longest_cDNA demo file as reference
@@ -12,6 +14,7 @@ This script is designed to quickly generate a file recording all the signals nea
 ├── ribosome_profiling_pipeline/  # to generate .bedgraph file
 │
 ├── README.md                     # Documentation (this file)
+```
 
 ## Usage
 
