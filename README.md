@@ -1,8 +1,27 @@
-## Installation
+# Ribosome-pausing
+This script is designed to quickly generate a file recording all the signals near to the central 3 codons flanked by 10 codons by using sliding window. It can also be running at  underpowered or RAM-limited machine. 
 
-When all steps in ribosome_profiling_pipeline\ have been conducted, a bedgraph file will be created, then 
+## Ribosome-pausing/
+├── Script in python for analyzing ribosome pausing/
+│   ├── test_A.bedgraph           # bedgraph  demo file for testing
+│   ├── test_longest_cDNA.txt     # longest_cDNA demo file as reference
+│   ├── tri_PPP_pausing.png       # image of a typical pausing position
+│   ├── v3_finnal_ave_0frame_normed_dicodon_pausing.py   # Main script to run the pipeline
+│   └── Readme.txt               
+│
+├── ribosome_profiling_pipeline/  # to generate .bedgraph file
+│
+├── README.md                     # Documentation (this file)
 
-At terminal, use
+## Usage
+
+python subsampling.py v3_finnal_ave_0frame_normed_dicodon_pausing.py -i  -r 
+
+-i, input .bedgraph file
+
+-r, input longest_cDNA.txt file
+
+## Example:
 
 python v3_finnal_ave_0frame_normed_dicodon_pausing.py -i .\test_A.bedgraph -r .\ .\test_longest_cDNA.txt
 
