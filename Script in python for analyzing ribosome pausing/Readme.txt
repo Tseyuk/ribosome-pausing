@@ -1,6 +1,8 @@
-at terminal, use
+# USAGE
 
 python v3_finnal_ave_0frame_normed_dicodon_pausing.py -i .\test_A.bedgraph -r .\ .\test_longest_cDNA.txt
+
+NOTE:
 
 test_A.bedgraph is a file that records ribosome footprints
 test_longest_cDNA.txt is a file that contains the lonest cDNA for a gene
