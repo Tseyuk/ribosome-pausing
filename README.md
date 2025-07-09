@@ -4,16 +4,16 @@ This script is designed to quickly generate a file recording all the signals nea
 ## Ribosome-pausing/
 
 ```shell
-├── Script in python for analyzing ribosome pausing/
-│   ├── test_A.bedgraph           # bedgraph  demo file for testing
-│   ├── test_longest_cDNA.txt     # longest_cDNA demo file as reference
-│   ├── tri_PPP_pausing.png       # image of a typical pausing position
-│   ├── v3_finnal_ave_0frame_normed_dicodon_pausing.py   # Main script to run the pipeline
-│   └── Readme.txt               
-│
-├── ribosome_profiling_pipeline/  # to generate .bedgraph file
-│
-├── README.md                     # Documentation (this file)
+#├── Script in python for analyzing ribosome pausing/
+#│   ├── test_A.bedgraph           # bedgraph  demo file for testing
+#│   ├── test_longest_cDNA.txt     # longest_cDNA demo file as reference
+#│   ├── tri_PPP_pausing.png       # image of a typical pausing position
+#│   ├── v3_finnal_ave_0frame_normed_dicodon_pausing.py   # Main script to run the pipeline
+#│   └── Readme.txt               
+#│
+#├── ribosome_profiling_pipeline/  # to generate .bedgraph file
+#│
+#├── README.md                     # Documentation (this file)
 ```
 
 ## Usage
