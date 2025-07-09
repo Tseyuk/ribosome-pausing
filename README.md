@@ -1,4 +1,4 @@
-#Features
+##Features
 When all steps in ribosome_profiling_pipeline\ have been conducted, a bedgraph file will be created, then 
 
 At terminal, use
