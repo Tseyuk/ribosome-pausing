@@ -1,7 +1,7 @@
 # Ribosome-pausing
 This script is designed to quickly generate a file recording all the signals near to the central 3 codons flanked by 10 codons by using sliding window. It can also be running at  underpowered or RAM-limited machine. 
 
-## Ribosome-pausing/
+## Project Structure
 
 ```shell
 #├── Script in python for analyzing ribosome pausing/
