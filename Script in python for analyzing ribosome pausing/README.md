@@ -1,5 +1,3 @@
-md
-
 # USAGE
 
 python v3_finnal_ave_0frame_normed_dicodon_pausing.py -i .\test_A.bedgraph -r .\ .\test_longest_cDNA.txt
